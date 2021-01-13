@@ -29,15 +29,16 @@ phases:
     #commands:
       # - command
       # - command
-  #pre_build:
-    #commands:
+  pre_build:
+    commands:
+      - python -m http.server 8000
       # - command
       # - command
   build:
     commands:
       # - command
       # - command
-      - zip test-codepipeline.zip *
+      - zip test-codepipeline.zip index.html
   #post_build:
     #commands:
       # - command
