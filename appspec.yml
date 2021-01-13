@@ -98,7 +98,7 @@ hooks:
 # During the ApplicationStart deployment lifecycle event, run the commands
 #   in the script specified in "location".
   ApplicationStart:
-    - location: python3 -m http.server 8000
+    - location: ./run.sh
       timeout: 180
       runas:
 #    - location:
