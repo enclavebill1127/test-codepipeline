@@ -79,22 +79,22 @@ hooks:
 # During the ApplicationStop deployment lifecycle event, run the commands
 #   in the script specified in "location" starting from the root of the
 #   revision's file bundle.
-  ApplicationStop:
-    - location: echo "ApplicationStop"
-      timeout: 180
-      runas:
+#  ApplicationStop:
+#    - location: echo "ApplicationStop"
+#      timeout: 180
+#      runas:
 # During the BeforeInstall deployment lifecycle event, run the commands
 #   in the script specified in "location".
-  BeforeInstall:
-    - location: echo "BeforeInstall"
-      timeout: 180
-      runas:
+#  BeforeInstall:
+#    - location: echo "BeforeInstall"
+#      timeout: 180
+#      runas:
 # During the AfterInstall deployment lifecycle event, run the commands
 #   in the script specified in "location".
-  AfterInstall:
-    - location: echo "AfterInstall"
-      timeout: 180
-      runas:
+#  AfterInstall:
+#    - location: echo "AfterInstall"
+#      timeout: 180
+#      runas:
 # During the ApplicationStart deployment lifecycle event, run the commands
 #   in the script specified in "location".
   ApplicationStart:
@@ -106,7 +106,7 @@ hooks:
 #      runas:
 # During the ValidateService deployment lifecycle event, run the commands
 #   in the script specified in "location".
-  ValidateService:
-    - location: echo "ValidateService"
-      timeout: 180
-      runas:
+#  ValidateService:
+#    - location: echo "ValidateService"
+#      timeout: 180
+#      runas:
