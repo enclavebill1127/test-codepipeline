@@ -34,8 +34,8 @@ phases:
 #      - python3 -m http.server 8000
       # - command
       # - command
-#  build:
-#    commands:
+  build:
+    commands:
 #      # - command
 #      # - command
       - zip test-codepipeline.zip *
