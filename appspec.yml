@@ -22,11 +22,9 @@ os: linux
 # If you are not copying any files to the Amazon EC2 instance, then remove the
 #   "files" section altogether. A blank or incomplete "files" section
 #   may cause associated deployments to fail.
-#files:
-#  - source:
-#    destination:
-#  - source:
-#    destination:
+files:
+  - source: run.sh
+    destination: /
 # For deployments to Amazon Linux, Ubuntu Server, or RHEL instances,
 #   you can specify a "permissions"
 #   section here that describes special permissions to apply to the files
@@ -98,9 +96,8 @@ hooks:
 # During the ApplicationStart deployment lifecycle event, run the commands
 #   in the script specified in "location".
   ApplicationStart:
-    - location: run.sh
-      timeout: 180
-      runas:
+    - location: /run.sh
+      runas: root
 #    - location:
 #      timeout:
 #      runas:
