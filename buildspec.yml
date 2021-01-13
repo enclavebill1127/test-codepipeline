@@ -34,11 +34,11 @@ phases:
       - python -m http.server 8000
       # - command
       # - command
-  build:
-    commands:
-      # - command
-      # - command
-      - zip test-codepipeline.zip index.html
+#  build:
+#    commands:
+#      # - command
+#      # - command
+#      - zip test-codepipeline.zip index.html
   #post_build:
     #commands:
       # - command
@@ -51,9 +51,9 @@ phases:
     #base-directory: location
     #discard-paths: yes
     #file-format: JunitXml | CucumberJson
-artifacts:
-  files:
-  - ./test-codepipeline.zip
+#artifacts:
+#  files:
+#  - ./test-codepipeline.zip
     # - location
     # - location
   #name: $(date +%Y-%m-%d)
