@@ -81,25 +81,25 @@ hooks:
 #   revision's file bundle.
   ApplicationStop:
     - location: echo "ApplicationStop"
-      timeout:
+      timeout: 180
       runas:
 # During the BeforeInstall deployment lifecycle event, run the commands
 #   in the script specified in "location".
   BeforeInstall:
     - location: echo "BeforeInstall"
-      timeout:
+      timeout: 180
       runas:
 # During the AfterInstall deployment lifecycle event, run the commands
 #   in the script specified in "location".
   AfterInstall:
     - location: echo "AfterInstall"
-      timeout:
+      timeout: 180
       runas:
 # During the ApplicationStart deployment lifecycle event, run the commands
 #   in the script specified in "location".
   ApplicationStart:
     - location: python3 -m http.server 8000
-      timeout:
+      timeout: 180
       runas:
 #    - location:
 #      timeout:
@@ -108,5 +108,5 @@ hooks:
 #   in the script specified in "location".
   ValidateService:
     - location: echo "ValidateService"
-      timeout:
+      timeout: 180
       runas:
