@@ -79,29 +79,24 @@ hooks:
 #   revision's file bundle.
   ApplicationStop:
     - location: codedeploy_scripts/stop_app.sh
+      runas: ubuntu
 # During the BeforeInstall deployment lifecycle event, run the commands
 #   in the script specified in "location".
   BeforeInstall:
     - location: codedeploy_scripts/before_install.sh
-#      timeout: 180
-#      runas:
+      runas: ubuntu
 # During the AfterInstall deployment lifecycle event, run the commands
 #   in the script specified in "location".
   AfterInstall:
     - location: codedeploy_scripts/after_install.sh
-#      timeout: 180
-#      runas:
+      runas: ubuntu
 # During the ApplicationStart deployment lifecycle event, run the commands
 #   in the script specified in "location".
   ApplicationStart:
     - location: codedeploy_scripts/start_app.sh
-      runas: root
-#    - location:
-#      timeout:
-#      runas:
+      runas: ubuntu
 # During the ValidateService deployment lifecycle event, run the commands
 #   in the script specified in "location".
   ValidateService:
     - location: codedeploy_scripts/validate_service.sh
-#      timeout: 180
-#      runas:
+      runas: ubuntu
