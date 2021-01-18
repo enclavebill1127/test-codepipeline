@@ -93,7 +93,7 @@ hooks:
 # During the ApplicationStart deployment lifecycle event, run the commands
 #   in the script specified in "location".
   ApplicationStart:
-    - location: codedeploy_scripts/start_app.sh
+    - location: ./codedeploy_scripts/start_app.sh
       runas: ubuntu
 # During the ValidateService deployment lifecycle event, run the commands
 #   in the script specified in "location".
