@@ -77,26 +77,26 @@ hooks:
 # During the ApplicationStop deployment lifecycle event, run the commands
 #   in the script specified in "location" starting from the root of the
 #   revision's file bundle.
-#  ApplicationStop:
-#    - location: codedeploy_scripts/stop_app.sh
-#      runas: ubuntu
+  ApplicationStop:
+    - location: codedeploy_scripts/stop_app.sh
+      runas: ubuntu
 # During the BeforeInstall deployment lifecycle event, run the commands
 #   in the script specified in "location".
-#  BeforeInstall:
-#    - location: codedeploy_scripts/before_install.sh
-#      runas: ubuntu
+  BeforeInstall:
+    - location: codedeploy_scripts/before_install.sh
+      runas: ubuntu
 # During the AfterInstall deployment lifecycle event, run the commands
 #   in the script specified in "location".
-#  AfterInstall:
-#    - location: codedeploy_scripts/after_install.sh
-#      runas: ubuntu
+  AfterInstall:
+    - location: codedeploy_scripts/after_install.sh
+      runas: ubuntu
 # During the ApplicationStart deployment lifecycle event, run the commands
 #   in the script specified in "location".
   ApplicationStart:
-    - location: ./codedeploy_scripts/start_app.sh
+    - location: codedeploy_scripts/start_app.sh
       runas: ubuntu
 # During the ValidateService deployment lifecycle event, run the commands
 #   in the script specified in "location".
-#  ValidateService:
-#    - location: codedeploy_scripts/validate_service.sh
-#      runas: ubuntu
+  ValidateService:
+    - location: codedeploy_scripts/validate_service.sh
+      runas: ubuntu
