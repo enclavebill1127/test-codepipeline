@@ -52,7 +52,7 @@ phases:
     #discard-paths: yes
     #file-format: JunitXml | CucumberJson
 artifacts:
-#  files:
+  files:
   - ./test-codepipeline.zip
     # - location
     # - location
