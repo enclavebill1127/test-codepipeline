@@ -38,7 +38,7 @@ phases:
     commands:
 #      # - command
 #      # - command
-      - touch CodeBuild
+      - zip test-codepipeline.zip *
   #post_build:
     #commands:
       # - command
@@ -53,7 +53,7 @@ phases:
     #file-format: JunitXml | CucumberJson
 artifacts:
 #  files:
-#  - ./test-codepipeline.zip
+  - ./test-codepipeline.zip
     # - location
     # - location
   name: BuildArtifact
